@@ -1,5 +1,6 @@
 name: CI / CD Node.js Pipeline
 
+<<<<<<< HEAD
 on:
   push:
     branches: [ main ]
@@ -7,11 +8,23 @@ on:
     branches: [ main ]
 
 jobs:
+=======
+# Déclenchement sur toutes les branches
+on:
+  push:
+    branches: ["*"] # Toutes les branches
+  pull_request:
+    branches: ["*"] # Toutes les PR vers n'importe quelle branche
+
+jobs:
+
+>>>>>>> etudiant2
   test:
     name: Continuous Integration
     runs-on: ubuntu-latest
 
     steps:
+<<<<<<< HEAD
       - name: Checkout repository
         uses: actions/checkout@v4
 
@@ -25,6 +38,21 @@ jobs:
 
       - name: Run unit tests
         run: npm test
+=======
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: 20
+
+    - name: Install dependencies
+      run: npm ci
+
+    - name: Run unit tests
+      run: npm test
+>>>>>>> etudiant2
 
   deploy:
     name: Continuous Deployment
@@ -32,6 +60,7 @@ jobs:
     needs: test
 
     steps:
+<<<<<<< HEAD
       - name: Checkout repository
         uses: actions/checkout@v4
 
@@ -51,3 +80,13 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./
+=======
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./
+>>>>>>> etudiant2

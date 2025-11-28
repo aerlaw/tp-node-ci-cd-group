@@ -1,3 +1,2 @@
-// index.test.js
-const addition = require('./index');
-test('1 + 2 = 3', () => expect(addition(1,2)).toBe(3));
+const multiplication = require ('./index');
+test ('2 * 3 = 6', () => expect (multiplication (2,3)).toBe(6));
