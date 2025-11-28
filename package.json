@@ -4,7 +4,9 @@
   "description": "��#\u0000 \u0000t\u0000p\u0000-\u0000n\u0000o\u0000d\u0000e\u0000-\u0000c\u0000i\u0000-\u0000c\u0000d\u0000-\u0000g\u0000r\u0000o\u0000u\u0000p\u0000\r\u0000 \u0000",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "lint": "eslint .",
+    "test": "jest",
+    "build": "echo \"build ok\""
   },
   "repository": {
     "type": "git",
@@ -19,6 +21,7 @@
   },
   "homepage": "https://github.com/aerlaw/tp-node-ci-cd-group#readme",
   "devDependencies": {
+    "eslint": "^9.39.1",
     "jest": "^30.2.0"
   }
 }
