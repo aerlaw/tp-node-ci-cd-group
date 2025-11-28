@@ -1,7 +1,7 @@
 {
   "name": "tp-node-ci-cd-group",
   "version": "1.0.0",
-  "description": "��#\u0000 \u0000t\u0000p\u0000-\u0000n\u0000o\u0000d\u0000e\u0000-\u0000c\u0000i\u0000-\u0000c\u0000d\u0000-\u0000g\u0000r\u0000o\u0000u\u0000p\u0000\r\u0000 \u0000",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "lint": "eslint .",
@@ -21,7 +21,10 @@
   },
   "homepage": "https://github.com/aerlaw/tp-node-ci-cd-group#readme",
   "devDependencies": {
+    "@eslint/js": "^9.39.1",
     "eslint": "^9.39.1",
+    "eslint-plugin-jest": "^29.2.1",
+    "globals": "^16.5.0",
     "jest": "^30.2.0"
   }
 }
