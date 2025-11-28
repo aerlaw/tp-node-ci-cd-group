@@ -1,0 +1,40 @@
+# Dépendances
+node_modules/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Couverture de tests
+coverage/
+.nyc_output
+
+# Builds / dist
+dist/
+build/
+.out/
+.output/
+
+# Fichiers d'environnement
+.env
+.env.*
+!.env.example
+
+# Caches
+.cache
+.parcel-cache
+.vite/
+.next/
+.nuxt/
+.svelte-kit/
+.docusaurus
+
+# Outils / IDE
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
