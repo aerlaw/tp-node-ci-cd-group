@@ -8,18 +8,9 @@
     "test": "jest",
     "build": "echo \"build ok\""
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/aerlaw/tp-node-ci-cd-group.git"
-  },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
-  "bugs": {
-    "url": "https://github.com/aerlaw/tp-node-ci-cd-group/issues"
-  },
-  "homepage": "https://github.com/aerlaw/tp-node-ci-cd-group#readme",
   "devDependencies": {
     "@eslint/js": "^9.39.1",
     "eslint": "^9.39.1",

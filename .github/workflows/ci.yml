@@ -9,6 +9,8 @@ on:
 jobs:
   lint:
     name: Linting
+  test:
+    name: Continuous Integration
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository

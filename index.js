@@ -1,3 +1,2 @@
-// index.js
-function addition(a, b) { return a + b; }
-module.exports = addition;
+function multiplication (a, b) { return a * b ; }
+module . exports = multiplication;
